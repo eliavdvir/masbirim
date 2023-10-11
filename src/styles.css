@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "GveretLevinAlefAlefAlef";
+  src: url("/src/fonts/GveretLevinAlefAlefAlef-Regular.otf") format("opentype");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #cbd6eb 0%,
+    rgba(203, 214, 235, 0.89) 45.83%,
+    rgba(203, 214, 235, 0.69) 73.44%,
+    rgba(203, 214, 235, 0.67) 86.98%,
+    #cbd6eb 100%
+  );
+}
+
+.top-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 70%;
+}
+.platform-page {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+.platform-page {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 50vh;
+}
+.platforms-container {
+  position: absolute;
+  width: 50vw;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10vmin;
+  overflow-y: auto;
+}
+
+/* ELEMENTS */
+.home-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  width: 35%;
+  height: 15%;
+  border-radius: 2rem;
+  background: #eef4ff;
+  box-shadow: 0px 0px 6px 2px rgba(0, 94, 184, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home-button:hover {
+  background: #dce8ff;
+  box-shadow: 0px 0px 12px 4px rgba(0, 55, 107, 0.25);
+}
+.home-button img {
+  width: 7vmin;
+  height: 7vmin;
+  margin-left: 1.5rem;
+}
+.home-button span {
+  font-size: 2.25rem;
+  color: #002f5b;
+  margin-left: 5rem;
+  width: auto;
+}
+.social-platform-div {
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0px 0px 3px 2px rgba(0, 94, 184, 0.25);
+  width: 75%;
+  height: 20vmin;
+  margin-left: 12.5%;
+  margin-bottom: 5vmin;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-platform-div:hover {
+  background: #eef4ff;
+  box-shadow: 0px 0px 3px 2px rgba(0, 55, 107, 0.25);
+}
+.social-platform-div img {
+  position: relative;
+  top: 15%;
+  width: 7.5vmin;
+  height: 7.5vmin;
+}
+.social-platform-div span {
+  position: relative;
+  top: 22.5%;
+  width: 5vmin;
+  height: 5vmin;
+  width: 100%;
+  font-size: 2rem;
+}
+/* TEXT */
+.text1 {
+  font-family: "GveretLevinAlefAlefAlef", sans-serif;
+  font-weight: 400;
+}
+
+.top-text {
+  margin-left: 2rem;
+  color: #005eb8;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+.second-text {
+  position: relative;
+  top: -5%;
+  font-size: 3rem;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+.platform-first-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.1rem;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+.platform-second-text {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  color: #002f5b;
+}
+/* IMGS */
+.israel-flag {
+  margin-left: 2.5vmin;
+  margin-right: 1vmin;
+  width: 9vmin;
+  height: 9vmin;
+}
+
+@media (max-width: 768px) {
+  /* ELEMENTS */
+  .home-button {
+    width: 85%;
+    height: 15%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 2px rgba(0, 94, 184, 0.25);
+    top: 25%;
+  }
+  .home-button img {
+    width: 7vmin;
+    height: 7vmin;
+    margin-right: 2.5rem;
+  }
+  .home-button span {
+    font-size: 1.5rem;
+    color: #002f5b;
+    margin-left: 5rem;
+    width: auto;
+    white-space: nowrap;
+  }
+  .platforms-container {
+    width: 95vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .social-platform-div {
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0, 94, 184, 0.25);
+    width: 75%;
+    height: 40vmin;
+    margin-left: 12.5%;
+    margin-bottom: 5vmin;
+    border: none;
+    cursor: pointer;
+  }
+  .social-platform-div:hover {
+    background: #eef4ff;
+    box-shadow: 0px 0px 2px 2px rgba(0, 55, 107, 0.25);
+  }
+  .social-platform-div img {
+    top: 15%;
+    width: 15vmin;
+    height: 15vmin;
+  }
+  .social-platform-div span {
+    font-size: 1.75rem;
+  }
+  /* TEXT */
+  .top-text {
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  .second-text {
+    font-size: 1.75rem;
+  }
+  .platform-first-text {
+    font-size: 2rem;
+    top: -5%;
+  }
+  .platform-second-text {
+    top: 2rem;
+    font-size: 2rem;
+  }
+
+  /* IMGS */
+  .israel-flag {
+    margin-left: 2vmin;
+    margin-right: 0.3vmin;
+    width: 12.5vmin;
+    height: 12.5vmin;
+  }
+}
